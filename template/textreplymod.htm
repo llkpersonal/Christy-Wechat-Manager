@@ -1,0 +1,19 @@
+      <div id="content_container">
+        <div id="content_top"></div>
+        <div id="content">
+          <!-- insert the page content here -->
+          <h1>编辑文本回复</h1>
+          <form action="textreply.php?action=modify" method="post">
+            <div class="form_settings">
+              <input type="hidden" name="mid" value="{template_mid}" />
+              <input type="hidden" name="rid" value="{template_rid}" />
+              <p><span>关键词(支持*通配符)</span><input type="text" name="keyword" value="{template_keyword}" /></p>
+              <p><span>回复内容</span><textarea rows="10" name="replytext">{template_textreply}</textarea></p>
+              <p style="padding-top: 15px"><span>&nbsp;</span><input class="submit" type="submit" name="contact_submitted" value="提交" /></p>
+            </div>
+          </form>
+          
+        </div>
+        <div id="content_base"></div>
+      </div>
+    

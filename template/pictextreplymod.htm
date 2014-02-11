@@ -1,0 +1,49 @@
+<div id="content_container">
+        <div id="content_top"></div>
+        <div id="content">
+          <!-- insert the page content here -->
+          <h1>图文回复管理</h1>
+            <form action="pictextreply.php?action=modify" method="post">
+                <div class="form_settings">
+                    <input type="hidden" name="mid" value="{template_mid}"/>
+                    <input type="hidden" name="rid" value="{template_rid}"/>
+                <p><span>关键词</span><input type="text" name="keyword" value="{template_keyword}" /></p>
+                    </div>
+                <table>
+                    <tr>
+                        <th style="width:3%;">顺序</th>
+                        <th style="width:8%;">标题</th>
+                        <th style="width:8%;">描述</th>
+                        <th style="width:8%;">图片</th>
+                        <th style="width:8%;">链接</th>
+                        <th style="width:3%;">删除</th>
+                    </tr>
+                    {template_contents}
+                </table>
+                <input type="hidden" name="numOfItems" value="{template_number}"/>
+                 <p style="padding-top: 15px"><span>&nbsp;</span><input class="submit" type="submit" name="contact_submitted" value="提交" /></p>
+            </form>
+            
+        </div>
+        <div id="content_base"></div>
+      </div>
+<div id="content_container" style="padding-top:10px;">
+        <div id="content_top"></div>
+        <div id="content">
+          <!-- insert the page content here -->
+          <h1>添加图文回复项目</h1>
+            <form action="pictextreply.php?action=additem" method="post">
+            <div class="form_settings">
+                <input type="hidden" name="rid" value="{template_rid}"/>
+                <input type="hidden" name="mid" value="{template_mid}"/>
+              <p><span>标题</span><input type="text" name="title" value="" /></p>
+              <p><span>描述</span><input type="text" name="description" value="" /></p>
+              <p><span>图片链接</span><input type="text" name="picurl" value="" /></p>
+              <p><span>网址链接</span><input type="text" name="url" value="" /></p>
+              <p><span>显示顺序</span><input type="text" name="secquence" style="width:20px;" value="" /></p>
+              <p style="padding-top: 15px"><span>&nbsp;</span><input class="submit" type="submit" name="contact_submitted" value="提交" /></p>
+            </div>
+          </form>
+        </div>
+        <div id="content_base"></div>
+      </div>

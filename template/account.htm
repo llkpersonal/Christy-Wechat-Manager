@@ -1,0 +1,25 @@
+      <div id="content_container">
+        <div id="content_top"></div>
+        <div id="content">
+          <!-- insert the page content here -->
+          <h1>查看公众平台信息</h1>
+            <h4>在这里，您可以修改如下信息</h4>
+          <form action="account.php?action=update" method="post">
+            <div class="form_settings">
+              <p><span>WID</span><input type="text" value="{template_wid}" disabled="disabled" /></p>
+              <input type="hidden" name="wid" value="{template_wid}" />
+              <p><span>平台名称</span><input type="text" name="name" value="{template_name}" /></p>
+              <p><span>平台ID</span><input type="text" name="wechat_id" value="{template_wechat_id}" /></p>
+              <p><span>欢迎语</span><textarea class="textarea" rows="8" cols="50" name="welcome_msg">{template_welcomemsg}</textarea></p>
+              <p><span>登录邮箱</span><input type="text" name="email" value="{template_email}"/></p>
+              <p><span>登录密码(无改动请留空)</span><input type="password" name="password" value=""/></p>
+              <p><span>url</span><input type="text" name="url" value="{template_url}" disabled="disabled" /></p>
+              <p><span>token</span><input type="text" name="token" value="{template_token}" disabled="disabled"/></p>
+              <p style="padding-top: 15px"><span>&nbsp;</span><input class="submit" type="submit" name="submit" value="提交" /></p>
+            </div>
+          </form>
+          
+        </div>
+        <div id="content_base"></div>
+      </div>
+    

@@ -1,0 +1,21 @@
+<script type="text/javascript">
+    displayReply(0);
+</script>
+<div id="content_container">
+        <div id="content_top"></div>
+        <div id="content">
+          <!-- insert the page content here -->
+          <h1>智能回复管理</h1>
+            <p>请选择公众平台:
+                <select id="platform" name="platform" style="width:200px;" onchange="displayReply(this)">
+                    <option value="0">全部</option>
+                    {template_options}
+                </select>
+            </p>
+            
+            <div id="table_content">loading...</div>  
+            
+            <h5>以上是您所管理的微信公众平台的智能回复信息</h5>
+        </div>
+    <div id="content_base"></div>
+</div>

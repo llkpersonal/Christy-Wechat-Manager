@@ -1,0 +1,18 @@
+<script type="text/javascript">
+    var obj = {'value':{template_default}};
+    display_installed_plugin(obj);
+</script>
+<div id="content_container">
+    <div id="content_top"></div>
+    <div id="content">
+        <!-- insert the page content here -->
+        <h1>安装插件</h1>
+        <p><span>请选择公众平台：</span>
+            <select name="platid" onchange="display_installed_plugin(this)" style="width:200px;">
+                {template_options}
+            </select></p>
+        <div id="table_content"></div>
+        <h5>以上是该公众平台尚已安装的插件，您可以点击管理。</h5>
+    </div>
+    <div id="content_base"></div>
+</div>

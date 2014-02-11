@@ -1,0 +1,42 @@
+<div id="content_container">
+        <div id="content_top"></div>
+        <div id="content">
+          <!-- insert the page content here -->
+          <h1>友情链接管理</h1>
+            <h4>{template_tips}</h4>
+            <form action="links.php?action=manage" method="post">
+                <table>
+                    <tr>
+                        <th style="width:5%;">id</th>
+                        <th style="width:20%;">链接地址</th>
+                        <th style="width:20%;">链接名</th>
+                        <th style="width:5%;">显示</th>
+                        <th style="width:5%;">顺序</th>
+                        <th style="width:5%;">操作</th>
+                    </tr>
+                    {template_contents}
+                    
+                </table>
+                <input type="hidden" name="numOfItems" value="{template_number}"/>
+                <input class="submit" type="submit" name="submit" value="提交" />
+            </form>
+            
+        </div>
+        <div id="content_base"></div>
+      </div>
+<div id="content_container" style="padding-top:10px;">
+        <div id="content_top"></div>
+        <div id="content">
+          <!-- insert the page content here -->
+          <h1>添加友情链接</h1>
+            <form action="links.php?action=add" method="post">
+            <div class="form_settings">
+              <p><span>链接名称</span><input type="text" name="name" value="" /></p>
+              <p><span>链接地址</span><input type="text" name="link" value="" /></p>
+              <p><span>显示顺序</span><input type="text" name="secquence" style="width:20px;" value="" /></p>
+              <p style="padding-top: 15px"><span>&nbsp;</span><input class="submit" type="submit" name="contact_submitted" value="提交" /></p>
+            </div>
+          </form>
+        </div>
+        <div id="content_base"></div>
+      </div>

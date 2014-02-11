@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>微信墙</title>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/ajax.js"></script>
+<link rel="stylesheet" href="css/wxwall.css" type="text/css">
+</head>
+
+<body>
+<div class="main">
+    <div class="top" onclick="viewExplan();"><div class="k">微信添加公众号：<strong>{template_wxid}</strong>
+        <br>发送“微信墙”即可进入微信墙模式！</div></div>
+	<div class="wall">
+		<div class="left"></div>
+		<div class="center">
+			<div class="list">
+				<ul id="list"></ul>
+			</div>
+			<div class="footer"></div>
+		</div>
+		<div class="right"></div>
+	</div>
+	<div class="mone" id="mone" onclick="viewOneHide();"></div>
+	<div id="explan" style="display:none" onclick="viewExplan();"><p><b style="font-size:50px;">上墙方法：</b><br />1.微信添加公众号：{template_wxid}<br />2.发送“微信墙”即可进入微信墙模式！</p></div>
+    <div id="wid" style="display:none">{template_wid}</div>
+</div>
+</body>
+</html>

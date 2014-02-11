@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+  <title>{template_title}</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" />
+  <script src="js/jquery-1.11.0.min.js" type="text/javascript"></script>
+  <script src="js/jquery-1.11.0.js" type="text/javascript"></script>
+  <script src="js/site.js" type="text/javascript"></script>
+</head>
+
+<body>
+  <div id="main">
+    <div id="links"></div>
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the logo text -->
+          <h1>Christy<span class="logo_colour"> Wechat Manager</span></h1>
+          <h2>提供微信公众平台管理新体验</h2>
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <!-- put class="tab_selected" in the li tag for the selected page - to highlight which page you're on -->
+          <li id="home"><a href="index.php">主页</a></li>
+          <li id="manage"><a href="weconfig.php">管理设置</a></li>
+          <li id="message"><a href="checkreply.php">消息管理</a></li>
+          <li id="extend"><a href="plugin.php">扩展功能</a></li>
+            {template_login}
+        </ul>
+      </div>
+    </div>
+    <div id="site_content">
+      <div id="sidebar_container">
+        <!-- insert your sidebar items here -->
+        <div class="sidebar">
+          <div class="sidebar_top"></div>
+          <div class="sidebar_item">
+            <h1>功能列表</h1>
+            <h4>请点击以下链接</h4>
+              <p>
+              <ul>
+                  {template_featurelink}
+              </ul>
+              </p>
+          </div>
+          <div class="sidebar_base"></div>
+        </div>
+    </div>
+      

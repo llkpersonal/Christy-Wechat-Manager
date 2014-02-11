@@ -1,0 +1,30 @@
+
+      <div id="content_container">
+        <div id="content_top"></div>
+        <div id="content">
+          <!-- insert the page content here -->
+          <h1>微信墙设置</h1>
+            <p><a href="wall/?wid={template_wid}" target="_blank">点击这里展示您的微信墙</a></p>
+            <form action="index.php?action=config&wid={template_wid}" method="post">
+                是否需要审核: 
+                <input type="radio" name="needexamine" id="needexamine" value="yes" {template_yes}/>是
+                <input type="radio" name="needexamine" id="needexamine" value="no" {template_no}/>否
+                <input type="submit" name="submit" value="提交" />
+            </form>
+            <form action="index.php?action=all&wid={template_wid}" method="post">
+                <table>
+                    <tr>
+                        <th style="width:100px">昵称</th>
+                        <th style="width:300px">内容</th>
+                        <th style="width:100px">审核</th>
+                    </tr>
+                    {template_contents}
+                </table>
+                <input type="hidden" name="numbers" value="{template_numbers}" />
+                <input type="submit" name="submit" value="全部上墙" />
+            </form>
+            
+        </div>
+        <div id="content_base"></div>
+      </div>
+    
